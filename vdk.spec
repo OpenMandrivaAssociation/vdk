@@ -1,6 +1,6 @@
 %define name vdk
 %define version 2.0.3
-%define release 1mdk
+%define release %mkrel 1
 
 %define major   2
 %define libname %mklibname %name %major
