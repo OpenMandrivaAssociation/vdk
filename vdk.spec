@@ -16,7 +16,7 @@ Url:		http://vdkbuilder.sourceforge.net/
 
 License:	LGPL
 Group:		System/Libraries
-Buildrequires:	gnome-libs-devel libsigc++-devel tetex
+Buildrequires:	gnome-libs-devel libsigc++-devel tetex gtk2-devel
 
 %description
 - signal/events dispatching strategy makes a clear distinction between 
