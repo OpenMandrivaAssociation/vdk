@@ -16,6 +16,7 @@ Url:		http://vdkbuilder.sourceforge.net/
 
 License:	LGPL
 Group:		System/Libraries
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Buildrequires:	gnome-libs-devel libsigc++-devel tetex gtk2-devel
 
 %description
