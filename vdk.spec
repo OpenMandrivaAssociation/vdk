@@ -6,7 +6,7 @@
 %define libname %mklibname %name %major
 %define libnamedev %mklibname %name %major -d
 
-Summary:	A C++ framework that wraps famous Gtk+ widget set library
+Summary:	C++ framework that wraps famous Gtk+ widget set library
 Name:		%name
 Version:	%version
 Release:	%release
@@ -39,7 +39,7 @@ VDK is made of three separated libraries:
 - libvdkgnome a gnome-aware components library (optionally build) 
 
 %package -n %libname
-Summary:        A C++ framework that wraps famous Gtk+ widget set library
+Summary:        C++ framework that wraps famous Gtk+ widget set library
 Group:		System/Libraries
 
 %description -n %libname
@@ -62,7 +62,7 @@ VDK is made of three separated libraries:
 - libvdkgnome a gnome-aware components library (optionally build)
 
 %package -n %libnamedev 
-Summary:	The Visual Development Kit is a C++ wrapper for GTK+
+Summary:	C++ wrapper for GTK+
 Group:		Development/GNOME and GTK+
 Requires:	%libname = %version-%release
 Provides:	libvdk-devel
