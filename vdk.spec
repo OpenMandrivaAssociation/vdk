@@ -11,7 +11,7 @@
 Summary:	C++ framework that binds GTK+ GUI libraries
 Name:		vdk
 Version:	2.4.1
-Release:	%mkrel 3
+Release:	%mkrel 4
 Source0:	http://downloads.sourceforge.net/%{oname}/%{name}-%{version}.tar.gz
 # From Debian: fix 'extra qualification' build errors - AdamW 2008/09
 Patch0:		vdk-2.4.1-debian-qualification.patch
@@ -26,7 +26,7 @@ URL:		http://vdklib.sourceforge.net/
 License:	LGPLv2+
 Group:		System/Libraries
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	libsigc++-devel
+BuildRequires:	sigc++2.0-devel
 BuildRequires:	tetex
 BuildRequires:	gtk2-devel
 BuildRequires:	libdmx-devel
