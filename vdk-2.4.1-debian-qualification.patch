@@ -1,0 +1,26 @@
+--- vdk2-2.4.0.orig/vdk/vdkcomboentry.h
++++ vdk2-2.4.0/vdk/vdkcomboentry.h
+@@ -51,8 +51,8 @@
+ class VDKComboEntry: public VDKObject
+ {
+  protected:
+-  static int VDKComboEntry::FocusOutEvent(GtkWidget *,  GdkEventFocus*, gpointer wid);
+-  static int VDKComboEntry::FocusInEvent(GtkWidget *, GdkEventFocus*, gpointer wid);
++  static int FocusOutEvent(GtkWidget *,  GdkEventFocus*, gpointer wid);
++  static int FocusInEvent(GtkWidget *, GdkEventFocus*, gpointer wid);
+   VDKObjectSignal s_activated, s_changed, s_selected;
+  public:
+   /*!
+--- vdk2-2.4.0.orig/vdk/vdkfilechooser.h
++++ vdk2-2.4.0/vdk/vdkfilechooser.h
+@@ -106,8 +106,8 @@
+   DECLARE_EVENT_LIST(VDKFileChooser);
+   // declares two static used to initialize
+   // form display type and initial position
+-  static GtkWindowType VDKFileChooser::DisplayType;
+-  static GtkWindowPosition VDKFileChooser::InitialPosition;
++  static GtkWindowType DisplayType;
++  static GtkWindowPosition InitialPosition;
+   //
+     /*! 
+    * Add a filter based on a pattern

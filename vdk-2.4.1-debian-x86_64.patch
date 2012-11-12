@@ -1,0 +1,11 @@
+--- vdk2-2.4.0.orig/vdk/vdkclist.cc
++++ vdk2-2.4.0/vdk/vdkclist.cc
+@@ -377,7 +377,7 @@
+       // load array;
+       WideSelection = VDKIntArray(listSize);
+       for(t = 0; t < WideSelection.size();t++,list = list->next)
+-	WideSelection[t] = (int) list->data;
++	WideSelection[t] = (long) list->data;
+     }
+   return WideSelection;
+ }

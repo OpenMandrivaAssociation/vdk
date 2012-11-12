@@ -1,0 +1,32 @@
+--- vdk-2.4.1/vdk/Makefile.am	2004-11-06 09:47:10.000000000 -0800
++++ vdk-2.4.1/vdk/Makefile.am.new	2008-09-04 13:45:47.000000000 -0700
+@@ -189,6 +189,6 @@
+ AM_CXXFLAGS = @CXXFLAGS@
+ 
+ AM_LDFLAGS = $(GTK_CFLAGS) 
+-LIBS = $(GTK_LIBS)
++LIBS = $(GTK_LIBS) -ldmx -lpthread
+ 
+ EXTRA_DIST = rgb.cc
+--- vdk-2.4.1/vdk/Makefile.in	2005-05-24 08:05:27.000000000 -0700
++++ vdk-2.4.1/vdk/Makefile.in.new	2008-09-04 13:51:01.000000000 -0700
+@@ -151,7 +151,7 @@
+ INSTALL_STRIP_PROGRAM = @INSTALL_STRIP_PROGRAM@
+ LDFLAGS = @LDFLAGS@
+ LIBOBJS = @LIBOBJS@
+-LIBS = $(GTK_LIBS)
++LIBS = $(GTK_LIBS) -ldmx -lpthread
+ LIBTOOL = @LIBTOOL@
+ LN_S = @LN_S@
+ LTLIBOBJS = @LTLIBOBJS@
+--- vdk-2.4.1/configure.in	2004-11-06 10:16:43.000000000 -0800
++++ vdk-2.4.1/configure.in.new	2008-09-04 13:58:40.000000000 -0700
+@@ -156,7 +156,7 @@
+ #-------------------------
+ # to hide sigc implementation
+ # subst all above with this
+-LIBS="$LIBS -lpthread"
++LIBS="$LIBS -lpthread -ldmx"
+ #SIGCDEFINE=""
+ #SIGC_CFLAGS=""
+ #SIGC_LIBS="-lpthread"

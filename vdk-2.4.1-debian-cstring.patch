@@ -1,0 +1,35 @@
+--- vdk2-2.4.0.orig/vdk/entry.cc
++++ vdk2-2.4.0/vdk/entry.cc
+@@ -30,6 +30,9 @@
+ #include "vdk/forms.h"
+ #include "vdk/colors.h"
+ #include <string>
++
++#include <cstring>
++
+ static void
+ EntryChanged(GtkWidget* wid, gpointer gp)
+ {
+--- vdk2-2.4.0.orig/vdk/image.cc
++++ vdk2-2.4.0/vdk/image.cc
+@@ -38,6 +38,9 @@
+ #define DEFAULT_ICON_SIZE GTK_ICON_SIZE_BUTTON
+ #include "gtk/gtkstock.h"
+ #include "gtk/gtkiconfactory.h"
++
++#include <cstring>
++
+ static void
+ x_gtk_image_update_size (GtkImage *image,
+                        gint      image_width,
+--- vdk2-2.4.0.orig/vdk/vdkdate.cc
++++ vdk2-2.4.0/vdk/vdkdate.cc
+@@ -32,6 +32,8 @@
+ #include <cstdio>
+ #include <time.h>
+ 
++#include <cstring>
++
+ /*
+ days, moths, names
+ */
