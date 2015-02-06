@@ -11,7 +11,7 @@
 Summary:	C++ framework that binds GTK+ GUI libraries
 Name:		vdk
 Version:	2.4.1
-Release:	6
+Release:	7
 Source0:	http://downloads.sourceforge.net/%{oname}/%{name}-%{version}.tar.gz
 # From Debian: fix 'extra qualification' build errors - AdamW 2008/09
 Patch0:		vdk-2.4.1-debian-qualification.patch
