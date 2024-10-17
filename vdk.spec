@@ -22,7 +22,7 @@ Patch1:		vdk-2.4.1-debian-cstring.patch
 Patch2:		vdk-2.4.1-underlink.patch
 # From Debian: fix x86_64 build issues - AdamW 2008/09
 Patch3:		vdk-2.4.1-debian-x86_64.patch
-URL:		http://vdklib.sourceforge.net/
+URL:		https://vdklib.sourceforge.net/
 License:	LGPLv2+
 Group:		System/Libraries
 BuildRequires:	sigc++2.0-devel
